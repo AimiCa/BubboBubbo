@@ -1,0 +1,32 @@
+const cT = ["yellow", "green", "red", "blue"];
+const dT = ["bomb", "super", "timer"];
+const fT = ["red", "green", "blue"];
+const Vm = 13;
+const pT = .5;
+const mT = J.content.width / Vm;
+const gT = {
+    yellow: 16763458,
+    green: 5832494,
+    red: 16736095,
+    blue: 6583295
+};
+
+function getBallsCountByColor() {
+    const colorCounts = cT.reduce((counts, color) => {
+        counts[color] = 0;
+        return counts;
+    },
+    {}
+);
+    bubbles.forEach(bubble => {
+        if (bubble.color in colorCounts) {
+            colorCounts[bubble.color]++;
+        }
+    }
+);
+
+    return colorCounts;
+}
+
+const ballsCountByColor = getBallsCountByColor();
+console.log(ballsCountByColor);

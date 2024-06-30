@@ -1,0 +1,25 @@
+function checkBubbleTypesAndImages(bubbleGame) {
+    const bubbleTypes = bubbleGame.lines;
+    const textures = bubbleGame.gridContainer.children; //could not find the ...textures
+
+    let mismatchFound = false;
+    lines.forEach((line, index) => {
+        const bubbleType = line.type;
+        const texture = textures[index].texture;
+        const textureImage = texture.textureCacheIds[0];
+        const textureName = textureImage. //path of the image file;
+
+        if (type !== textureName) {
+            console.log(`Mismatch: Bubble Type: ${bubbleType}, Texture: ${textureName}`);
+            mismatchFound = true;
+        } else {
+            console.log(`Match: Bubble Type: ${bubbleType}, Texture: ${textureName}`);
+        }
+    });
+
+    if (!mismatchFound) {
+        console.log("All bubble types match their images.");
+    } else {
+        console.log("Some bubble types do not match their images.");
+    }
+}

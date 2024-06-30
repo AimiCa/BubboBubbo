@@ -1,0 +1,5 @@
+function getBallsOnScreen(t, e, i) {
+    return this.bubbleCount;
+}
+const ballsOnScreen = getBallsOnScreen(t, e, i);
+console.log(ballsOnScreen);
